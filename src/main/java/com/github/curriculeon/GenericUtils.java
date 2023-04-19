@@ -10,5 +10,9 @@ public class GenericUtils {
      */
     public static <T> T[] toArray(Collection<T> collection) {
         T[] ans = (T[])new Object[collection.size()];
+        for (int x = 0; x<collection.size(); x++){
+            ans[x] = (T)collection.toArray()[x];
+    }
+        return ans;
     }
 }
