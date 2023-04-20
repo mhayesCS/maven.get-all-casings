@@ -7,7 +7,17 @@ public class StringUtils {
      * @return near-identical string whose characters at specified indices are capitalized
      */
     public static String upperCaseIndices(String string, Integer... indices) {
-        return null;
+        String ans = "";
+        int cap =0;
+        for(int x =0; x<string.length(); x++){
+            if (cap < indices.length && x == indices[cap]){
+                ans += string.toUpperCase().charAt(x);
+                cap++;
+            }
+            else
+                ans += string.charAt(x);
+        }
+        return ans;
     }
 
 

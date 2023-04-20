@@ -38,7 +38,6 @@ public class IntegerPowerSetTest {
         );
     }
 
-
     @Test
     public void test4() {
         Integer[] input = {0, 1, 2};

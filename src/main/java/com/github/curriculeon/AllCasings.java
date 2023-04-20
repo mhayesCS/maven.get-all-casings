@@ -9,5 +9,6 @@ public class AllCasings {
      */
     public static Collection<String> getAllCasings(String string) {
         return null;
+
     }
 }
