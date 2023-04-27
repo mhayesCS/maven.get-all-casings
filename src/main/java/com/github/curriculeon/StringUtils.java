@@ -45,6 +45,14 @@ public class StringUtils {
      * @return near-identical string with character at `index` replaced with `replacementValue`
      */
     public static String replaceAtIndex(String stringToBeManipulated, Character replacementValue, Integer index) {
-        return null;
+        String ans = "";
+        for (int x = 0; x<stringToBeManipulated.length(); x++){
+            if (x == index){
+                ans+=replacementValue;
+            }
+            else
+                ans += stringToBeManipulated.charAt(x);
+        }
+        return ans;
     }
 }
