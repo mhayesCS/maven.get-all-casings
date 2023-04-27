@@ -28,7 +28,14 @@ public class StringUtils {
      * @return near-identical string with `valueToBeInserted` inserted at `index`
      */
     public static String insertAtIndex(String stringToBeManipulated, String valueToBeInserted, Integer index) {
-        return null;
+        String ans = "";
+        for (int x = 0; x<stringToBeManipulated.length(); x++){
+            if (x == index){
+                ans+=valueToBeInserted;
+            }
+            ans += stringToBeManipulated.charAt(x);
+        }
+        return ans;
     }
 
     /**
